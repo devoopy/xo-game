@@ -1,0 +1,153 @@
+.App {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  user-select: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #35166d;
+  overflow: hidden;
+}
+
+.grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  height: 60vw;
+  max-width: 60vh;
+  max-height: 60vh;
+  background: #320046;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 20vw;
+  max-width: 20vh;
+  max-height: 20vh;
+  border: 1px solid white;
+  font-size: 15vw;
+}
+
+.cell.red {
+  color: red;
+}
+
+.step {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+  width: 100%;
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+
+.score span {
+  position: absolute;
+  right: 20px;
+}
+
+.score.true span:first-child {
+  left: 20px;
+  color: aqua;
+}
+
+.score.false span:last-child {
+  left: 20px;
+  color: aqua;
+}
+
+.button {
+  margin: 20px;
+  padding: 5px 20px;
+  border: 4px solid white;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.line {
+  position: absolute;
+  display: none;
+}
+
+.line.h1 {
+  display: block;
+  transform: translateY(-33%) scaleX(1.2);
+}
+
+.line.h2 {
+  display: block;
+  transform: scaleX(1.2);
+}
+
+.line.h3 {
+  display: block;
+  transform: translateY(33%) scaleX(1.2);
+}
+
+.line.v1 {
+  display: block;
+  transform: translateX(-33%) rotateZ(100grad) scaleX(1.2);
+}
+
+.line.v2 {
+  display: block;
+  transform: rotateZ(100grad) scaleX(1.2);
+}
+
+.line.v3 {
+  display: block;
+  transform: translateX(33%) rotateZ(100grad) scaleX(1.2);
+}
+
+.line.g1 {
+  display: block;
+  transform: rotateZ(50grad) scaleX(1.6);
+}
+
+.line.g2 {
+  display: block;
+  transform: rotateZ(150grad) scaleX(1.6);
+}
